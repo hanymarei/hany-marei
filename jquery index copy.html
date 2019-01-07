@@ -1,0 +1,58 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>jquery learning</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+   
+  <script type="text/javascript" src="jquery.min.js"></script>
+
+<style>
+	#circle {
+		background-color:red;
+		height:200px;
+		width:200px;
+		border-radius:100px;
+	}
+	
+	#square1 {
+		background-color:green;
+		height:200px;
+		width:200px;
+	}
+	#square2 {
+		background-color:yellow;
+		height:200px;
+		width:200px;
+	}
+	
+
+
+</style>
+</head>
+
+
+
+<body>
+	
+	
+	<div id="circle"></div>
+	
+<script>
+
+	$("#circle").click(function(){
+		$(this).animate({
+		width:"300px",
+		height:"300px",
+		marginLeft:"100px"
+		},1500);
+	
+		})
+	
+</script>
+
+</body>
+</html>
